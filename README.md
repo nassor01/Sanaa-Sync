@@ -1,5 +1,11 @@
 # Sanaa-Sync
-A Django-based ecosystem to digitize the Swahilipot Hub Creatives Department, moving from manual Google Drive/Physical filing to an automated, data-driven professional marketplace.
+An integrated Resource & Talent Management Ecosystem designed specifically for the Swahilipot Hub Creatives Department.
+
+Talent Intelligence: A dynamic database that tracks artists' evolving skills (Primary/Secondary arts), their vetting status, and their professional "Success Stories" to increase their market value.
+
+Automated Operations: A smart booking engine for Hub spaces and equipment that not only manages schedules but automatically assigns staff "On-Duty" based on facility usage.
+
+Curated Marketplace: A secure bridge for partners and clients to post jobs, allowing the Department Head to "push" high-value opportunities to vetted artists, ensuring quality control and professional growth.
 ## Core User Roles (Permissions Logic)
 Creative Admin (Dept. Head): Full oversight, booking approvals, duty roster management, and "Greenlighting" projects.
 
