@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 # Custom "Caesar" Admin Header Customization
-admin.site.site_header = "Sanaa-Sync: Caesar Admin" # Large text at the top
+admin.site.site_header = "Sanaa-Sync: Swahilipot Admin" # Large text at the top
 admin.site.site_title = "Caesar Portal"             # Browser Tab title
 admin.site.index_title = "Swahilipot Creatives Dept." # Main subtitle
 
