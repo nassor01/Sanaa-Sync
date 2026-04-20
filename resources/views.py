@@ -113,8 +113,8 @@ def apply_for_gig(request, gig_id):
     gig = get_object_or_404(Gig, id=gig_id)
     if request.method == 'POST':
         if not request.user.is_vetted:
-            messages.warning(request, "Profile must be vetted to apply.")
-            return redirect('gig_list')
+            messages.warning(request, "You must be a vetted artist to apply for gigs!")
+            return redirect('profile_view')
         form = GigApplicationForm(request.POST, request.FILES)
         if form.is_valid():
             application = form.save(commit=False)
@@ -122,7 +122,7 @@ def apply_for_gig(request, gig_id):
             application.artist = request.user
             application.save()
             messages.success(request, f"Application for {gig.title} sent.")
-            return redirect('profile')
+            return redirect('profile_view')
     else:
         form = GigApplicationForm()
     return render(request, 'resources/apply_confirm.html', {'gig': gig, 'form': form})

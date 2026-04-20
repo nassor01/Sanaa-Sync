@@ -93,7 +93,7 @@ def signup(request):
              
             login(request, user)
             messages.info(request, "Welcome! Complete your portfolio to get your 'Vetted' badge.")
-            return redirect('landing_page') 
+            return redirect('profile_view') 
     else:
         form = HubSignUpForm()
     
